@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LovenseWrapper
+﻿namespace LovenseWrapper
 {
     // --------------------------------------------------------------------------------
     /// <summary>
@@ -17,6 +11,7 @@ namespace LovenseWrapper
         /// <summary>
         /// Extends the structure StLovensToyInfo:
         ///   Returns the ToyId as a string
+        ///   Covers the unsafe pointer operations
         /// </summary>
         /// <param name="stLovenseToyInfo"></param>
         /// <returns></returns>
@@ -45,6 +40,7 @@ namespace LovenseWrapper
         /// <summary>
         /// Extends the structure StLovensToyInfo:
         ///   Returns the ToyName as a string
+        ///   Covers the unsafe pointer operations
         /// </summary>
         /// <param name="stLovenseToyInfo"></param>
         /// <returns></returns>
