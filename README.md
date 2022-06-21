@@ -7,9 +7,9 @@ Added some more functionality to return managed types instead of pointers and cu
 To build the binaries it is necessary to allow unsafe code.
 It is essential to dispose all references to the objects in this wrapper.
 
-To use this wrapper in your projects it is needed to generate to correct binary for the platform and to include the correct versions (x86, x64) 
+To use this wrapper in your projects it is needed to generate the correct binary for the platform and to include the correct versions (x86, x64) 
 of the binaries of the lovense native-sdk.
 
-The binaries created get built for netcore 3.0 onwards.
+The binaries created get built for netcore 3.1 onwards.
 
-If there are any questions please don't hesitate to contact me here or on Discord: Lovense Devs :)
+If there are any questions please don't hesitate to contact me here, or on Discord: Lovense Devs :)
