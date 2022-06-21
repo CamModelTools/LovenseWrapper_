@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CppSharp.Runtime" Version="1.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LovenseWrapper">
+      <HintPath>..\LovenseWrapper\bin\x64\Debug\netcoreapp3.1\LovenseWrapper.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
