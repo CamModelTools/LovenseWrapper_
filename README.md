@@ -1,9 +1,9 @@
 # LovenseWrapper_
 This project is working in progress and a working pre-alpha release ...
 
-It's a managed netcore wrapper around the Lovense native-sdk which is unmanaged
-Built with the help of cppsharp.
-Added some more functionality to return managed types instead of pointers.
+It's a managed netcore wrapper around the Lovense native-sdk which is unmanaged.
+Built with the help of CppSharp.
+Added some more functionality to return managed types instead of pointers and curated a bit the code.
 To build the binaries it is necessary to allow unsafe code.
 It is essential to dispose all references to the objects in this wrapper.
 
