@@ -6,8 +6,23 @@ using System.Threading.Tasks;
 
 namespace LovenseWrapper
 {
+    // --------------------------------------------------------------------------------
+    /// <summary>
+    /// Extends the structure StLovensToyInfo with useful functions
+    /// </summary>
+    // --------------------------------------------------------------------------------
     public static class Extensions
     {
+        // ********************************************************************************
+        /// <summary>
+        /// Extends the structure StLovensToyInfo:
+        ///   Returns the ToyId as a string
+        /// </summary>
+        /// <param name="stLovenseToyInfo"></param>
+        /// <returns></returns>
+        // <created>CMT,20/06/2022</created>
+        // <changed>CMT,20/06/2022</changed>
+        // ********************************************************************************
         public static string ToyIdStr(this StLovenseToyInfo stLovenseToyInfo)
         {
             string toyIdentification = "";
@@ -26,6 +41,16 @@ namespace LovenseWrapper
             return toyIdentification;
         }
 
+        // ********************************************************************************
+        /// <summary>
+        /// Extends the structure StLovensToyInfo:
+        ///   Returns the ToyName as a string
+        /// </summary>
+        /// <param name="stLovenseToyInfo"></param>
+        /// <returns></returns>
+        // <created>CMT,20/06/2022</created>
+        // <changed>CMT,20/06/2022</changed>
+        // ********************************************************************************
         public static string ToyNameStr(this StLovenseToyInfo stLovenseToyInfo)
         {
             string toyNameTest = "";
@@ -43,6 +68,16 @@ namespace LovenseWrapper
             return toyNameTest;
         }
 
+        // ********************************************************************************
+        /// <summary>
+        /// Extends the structure StLovensToyInfo:
+        ///   Returns the ToyType as a string
+        /// </summary>
+        /// <param name="stLovenseToyInfo"></param>
+        /// <returns></returns>
+        // <created>CMT,20/06/2022</created>
+        // <changed>CMT,20/06/2022</changed>
+        // ********************************************************************************
         public static string ToyTypeStr(this StLovenseToyInfo stLovenseToyInfo)
         {
             return ((LVSToyType)stLovenseToyInfo.ToyType).ToString();

@@ -43,7 +43,7 @@ namespace LovenseWrapper
     public unsafe abstract partial class ILovenseSDKNotify : IDisposable
     {
         [StructLayout(LayoutKind.Sequential, Size = 8)]
-        public partial struct __Internal
+        internal partial struct __Internal
         {
             internal __IntPtr vfptr_ILovenseSDKNotify;
 
@@ -54,11 +54,11 @@ namespace LovenseWrapper
             internal static extern __IntPtr cctor(__IntPtr __instance, __IntPtr _0);
         }
 
-        public __IntPtr __Instance { get; protected set; }
+        internal __IntPtr __Instance { get; private set; }
 
         internal static readonly global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, global::LovenseWrapper.ILovenseSDKNotify> NativeToManagedMap = new global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, global::LovenseWrapper.ILovenseSDKNotify>();
 
-        protected bool __ownsNativeInstance;
+        internal bool __ownsNativeInstance;
 
         internal static ILovenseSDKNotify __CreateInstance(__IntPtr native, bool skipVTables = false)
         {
@@ -92,7 +92,7 @@ namespace LovenseWrapper
             return new ILovenseSDKNotifyInternal(native, skipVTables);
         }
 
-        protected ILovenseSDKNotify(void* native, bool skipVTables = false)
+        internal ILovenseSDKNotify(void* native, bool skipVTables = false)
         {
             if (native == null)
                 return;
@@ -100,7 +100,7 @@ namespace LovenseWrapper
         }
 
         // DEBUG: ILovenseSDKNotify
-        protected ILovenseSDKNotify()
+        internal ILovenseSDKNotify()
         {
             __Instance = Marshal.AllocHGlobal(sizeof(global::LovenseWrapper.ILovenseSDKNotify.__Internal));
             __ownsNativeInstance = true;
@@ -110,7 +110,7 @@ namespace LovenseWrapper
         }
 
         // DEBUG: ILovenseSDKNotify
-        protected ILovenseSDKNotify(global::LovenseWrapper.ILovenseSDKNotify _0)
+        internal ILovenseSDKNotify(global::LovenseWrapper.ILovenseSDKNotify _0)
         {
             __Instance = Marshal.AllocHGlobal(sizeof(global::LovenseWrapper.ILovenseSDKNotify.__Internal));
             __ownsNativeInstance = true;
@@ -301,7 +301,8 @@ namespace LovenseWrapper
             }
         }
 
-        protected CppSharp.Runtime.VTables __vtables;
+        internal CppSharp.Runtime.VTables __vtables;
+
         internal virtual CppSharp.Runtime.VTables __VTables
         { 
             get {
@@ -380,10 +381,11 @@ namespace LovenseWrapper
     // DEBUG: 		*/
     // DEBUG: 		virtual int GetToyBattery(const char* szToyID, int *battery_out) = 0;
     // DEBUG: }
+
     public unsafe abstract partial class CLovenseToyManager : IDisposable
     {
         [StructLayout(LayoutKind.Sequential, Size = 8)]
-        public partial struct __Internal
+        internal partial struct __Internal
         {
             internal __IntPtr vfptr_CLovenseToyManager;
 
@@ -394,11 +396,11 @@ namespace LovenseWrapper
             internal static extern __IntPtr cctor(__IntPtr __instance, __IntPtr _0);
         }
 
-        public __IntPtr __Instance { get; protected set; }
+        internal __IntPtr __Instance { get; private set; }
 
         internal static readonly global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, global::LovenseWrapper.CLovenseToyManager> NativeToManagedMap = new global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, global::LovenseWrapper.CLovenseToyManager>();
 
-        protected bool __ownsNativeInstance;
+        internal bool __ownsNativeInstance;
 
         internal static CLovenseToyManager __CreateInstance(__IntPtr native, bool skipVTables = false)
         {
@@ -432,7 +434,7 @@ namespace LovenseWrapper
             return new CLovenseToyManagerInternal(native, skipVTables);
         }
 
-        protected CLovenseToyManager(void* native, bool skipVTables = false)
+        internal CLovenseToyManager(void* native, bool skipVTables = false)
         {
             if (native == null)
                 return;
@@ -440,7 +442,7 @@ namespace LovenseWrapper
         }
 
         // DEBUG: CLovenseToyManager
-        protected CLovenseToyManager()
+        internal CLovenseToyManager()
         {
             __Instance = Marshal.AllocHGlobal(sizeof(global::LovenseWrapper.CLovenseToyManager.__Internal));
             __ownsNativeInstance = true;
@@ -450,7 +452,7 @@ namespace LovenseWrapper
         }
 
         // DEBUG: CLovenseToyManager
-        protected CLovenseToyManager(global::LovenseWrapper.CLovenseToyManager _0)
+        internal CLovenseToyManager(global::LovenseWrapper.CLovenseToyManager _0)
         {
             __Instance = Marshal.AllocHGlobal(sizeof(global::LovenseWrapper.CLovenseToyManager.__Internal));
             __ownsNativeInstance = true;
@@ -666,7 +668,7 @@ namespace LovenseWrapper
             }
         }
 
-        protected CppSharp.Runtime.VTables __vtables;
+        internal CppSharp.Runtime.VTables __vtables;
         internal virtual CppSharp.Runtime.VTables __VTables
         { 
             get {
@@ -767,7 +769,7 @@ namespace LovenseWrapper
         }
     }
 
-    public unsafe partial class CLovenseToyManagerInternal : global::LovenseWrapper.CLovenseToyManager, IDisposable
+    internal unsafe partial class CLovenseToyManagerInternal : global::LovenseWrapper.CLovenseToyManager, IDisposable
     {
         private static void* __CopyValue(__Internal native)
         {
@@ -884,7 +886,7 @@ namespace LovenseWrapper
 
     public unsafe partial class Lovense
     {
-        public partial struct __Internal
+        internal partial struct __Internal
         {
             [SuppressUnmanagedCodeSecurity, DllImport("LovenseToys", EntryPoint = "GetLovenseToyManager", CallingConvention = __CallingConvention.Cdecl)]
             internal static extern __IntPtr GetLovenseToyManager();
@@ -1629,7 +1631,7 @@ namespace LovenseWrapper
     public unsafe partial class StLovenseToyInfo : IDisposable
     {
         [StructLayout(LayoutKind.Sequential, Size = 32)]
-        public partial struct __Internal
+        internal partial struct __Internal
         {
             internal __IntPtr toy_id;
             internal __IntPtr toy_name;
@@ -1641,11 +1643,11 @@ namespace LovenseWrapper
             internal static extern __IntPtr cctor(__IntPtr __instance, __IntPtr _0);
         }
 
-        public __IntPtr __Instance { get; protected set; }
+        internal __IntPtr __Instance { get; private set; }
 
         internal static readonly global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, global::LovenseWrapper.StLovenseToyInfo> NativeToManagedMap = new global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, global::LovenseWrapper.StLovenseToyInfo>();
 
-        protected bool __ownsNativeInstance;
+        internal bool __ownsNativeInstance;
 
         internal static StLovenseToyInfo __CreateInstance(__IntPtr native, bool skipVTables = false)
         {
@@ -1683,7 +1685,7 @@ namespace LovenseWrapper
             NativeToManagedMap[__Instance] = this;
         }
 
-        protected StLovenseToyInfo(void* native, bool skipVTables = false)
+        internal StLovenseToyInfo(void* native, bool skipVTables = false)
         {
             if (native == null)
                 return;
@@ -1691,7 +1693,7 @@ namespace LovenseWrapper
         }
 
         // DEBUG: st_lovense_toy_info
-        public StLovenseToyInfo()
+        internal StLovenseToyInfo()
         {
             __Instance = Marshal.AllocHGlobal(sizeof(global::LovenseWrapper.StLovenseToyInfo.__Internal));
             __ownsNativeInstance = true;
@@ -1699,7 +1701,7 @@ namespace LovenseWrapper
         }
 
         // DEBUG: st_lovense_toy_info
-        public StLovenseToyInfo(global::LovenseWrapper.StLovenseToyInfo _0)
+        internal StLovenseToyInfo(global::LovenseWrapper.StLovenseToyInfo _0)
         {
             __Instance = Marshal.AllocHGlobal(sizeof(global::LovenseWrapper.StLovenseToyInfo.__Internal));
             __ownsNativeInstance = true;
@@ -1824,7 +1826,7 @@ namespace LovenseWrapper
     public unsafe partial class CToyInfo : IDisposable
     {
         [StructLayout(LayoutKind.Sequential, Size = 152)]
-        public partial struct __Internal
+        internal partial struct __Internal
         {
             internal __IntPtr vfptr_CToyInfo;
             internal global::Std.BasicString.__Internalc__N_std_S_basic_string__C___N_std_S_char_traits__C___N_std_S_allocator__C m_strToyID;
@@ -1863,7 +1865,7 @@ namespace LovenseWrapper
             internal static extern void SetToyType(__IntPtr __instance, global::LovenseWrapper.LVSToyType type);
         }
 
-        public __IntPtr __Instance { get; protected set; }
+        internal __IntPtr __Instance { get; private set; }
 
         internal static readonly global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, global::LovenseWrapper.CToyInfo> NativeToManagedMap = new global::System.Collections.Concurrent.ConcurrentDictionary<IntPtr, global::LovenseWrapper.CToyInfo>();
 
@@ -1915,7 +1917,7 @@ namespace LovenseWrapper
             NativeToManagedMap[__Instance] = this;
         }
 
-        protected CToyInfo(void* native, bool skipVTables = false)
+        internal CToyInfo(void* native, bool skipVTables = false)
         {
             if (native == null)
                 return;
@@ -1925,7 +1927,7 @@ namespace LovenseWrapper
         }
 
         // DEBUG: CToyInfo()
-        public CToyInfo()
+        internal CToyInfo()
         {
             __Instance = Marshal.AllocHGlobal(sizeof(global::LovenseWrapper.CToyInfo.__Internal));
             __ownsNativeInstance = true;
@@ -1935,7 +1937,7 @@ namespace LovenseWrapper
         }
 
         // DEBUG: CToyInfo
-        public CToyInfo(global::LovenseWrapper.CToyInfo _0)
+        internal CToyInfo(global::LovenseWrapper.CToyInfo _0)
         {
             __Instance = Marshal.AllocHGlobal(sizeof(global::LovenseWrapper.CToyInfo.__Internal));
             __ownsNativeInstance = true;
