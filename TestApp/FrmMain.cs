@@ -263,7 +263,7 @@ namespace TestApp
         private void BtnSearchToys_Click(object sender, EventArgs e)
         {
             // Insert here your developer token ...
-            bool tokenIsValid = Ltm.SetDeveloperToken("AUoSrvCL-poWB__NNnw3cgeE7hSeE_GAbMsRjCcULr_ihMdh9w__fhJtCswknST8");
+            bool tokenIsValid = Ltm.SetDeveloperToken("<your api key here ;)>");
             TxbLog.Clear();
             if (tokenIsValid)
             {
